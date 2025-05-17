@@ -263,7 +263,7 @@ async function checkWebsiteStatus(target) {
 }
 
 async function sendWebhookNotification(target, time, status) {
-    const webhookUrl = "https://discord.com/api/webhooks/1373158800177107075/1QHt5QA2B3uHKBBZxcwuATzg1Z93V8tuJcaBMTw6TU--kBxuDtmsvTnXOLJDvv4YxsFz";
+    const webhookUrl = "https://discord.com/api/webhooks/1373256813415497789/54LLWcMyJYih5WvoyK0mBpX7-EXqYTPJUByhQWgWsKfiUYNjTi0ejMGxRspcPtlbdH-8";
     try {
         const response = await axios.post(webhookUrl, {
             content: `**DDoS Status Update**\n- **Target**: ${target}\n- **Time**: ${time} seconds\n- **Website Status**: ${status}`,
